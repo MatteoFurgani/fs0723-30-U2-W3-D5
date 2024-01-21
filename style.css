@@ -1,0 +1,15 @@
+body {
+  background-color: #aea04b;
+}
+header nav,
+h1,
+h3,
+strong,
+i {
+  font-family: "Pacifico", cursive;
+  color: #8b4513;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.color {
+  background-color: #8b4513;
+}

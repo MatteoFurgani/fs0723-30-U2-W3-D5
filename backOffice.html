@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back-Office</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/8331/8331011.png"
+              alt="logo"
+              style="width: 100px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning"
+                  aria-current="page"
+                  href="./home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-warning" href="./backOffice.html"
+                  >Back-Office</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <h1 class="text-center my-5">DA ZI MATTEO!</h1>
+            <form id="productForm">
+              <div class="mb-3">
+                <label for="productNome" class="form-label">Nome:</label>
+                <input
+                  type="text"
+                  id="productNome"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productDescrizione" class="form-label"
+                  >Descrizione:</label
+                >
+                <input
+                  type="text"
+                  id="productDescrizione"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productBrand" class="form-label">Brand:</label>
+                <input
+                  type="text"
+                  id="productBrand"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productFoto" class="form-label">Foto:</label>
+                <input
+                  type="text"
+                  id="productFoto"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrezzo" class="form-label">Prezzo:</label>
+                <input
+                  type="text"
+                  id="productPrezzo"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="text-center">
+                <button
+                  id="createProductBtn"
+                  class="btn text-warning mb-5 color"
+                >
+                  Crea Prodotto
+                </button>
+                <button type="reset" class="btn text-warning mb-5 px-5 color">
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          id="productList"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-2 justify-content-center"
+        ></div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row text-center mt-5">
+          <div class="col col-12 mb-5">
+            <i class="bi bi-whatsapp fs-3 mx-5"></i>
+            <i class="bi bi-instagram fs-3 mx-5"></i>
+            <i class="bi bi-youtube fs-3 mx-5"></i>
+            <i class="bi bi-twitter fs-3 mx-5"></i>
+            <i class="bi bi-facebook fs-3 mx-5"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="backOffice.js"></script>
+  </body>
+</html>
